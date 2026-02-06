@@ -1,0 +1,64 @@
+WEEK 2 CLEANING PLAN
+====================
+Name: Ria Abraham
+Date: 2026-02-06
+
+I've completed all 5 tutorials and application checklists.
+
+Looking across all my checklists, these are the 2 most important issues 
+to address in Week 2:
+
+
+ISSUE 1 (Most Important)
+-------------------------
+Brief description:
+Inconsistent spelling and capitalisation of categorical variables creates artificial groups.
+
+Which tutorial provides the solution:
+Tutorial 1 – Checking strings
+
+Which variable(s) affected:
+site, treatment, collector
+
+Why this is important to fix:
+Inconsistent categories inflate group counts, distort summaries, and invalidate
+comparisons between treatments and sites.
+
+What I plan to do:
+Standardise all character variables by converting to lower case and recoding
+inconsistent labels to a single accepted form.
+
+
+ISSUE 2 (Second Most Important)
+--------------------------------
+Brief description:
+Body mass contains biologically impossible negative values.
+
+Which tutorial provides the solution:
+Tutorial 5 – Numeric & cross-variable consistency
+
+Which variable(s) affected:
+body_mass_mg
+
+Why this is important to fix:
+Negative body mass values are biologically impossible and would bias any analysis
+involving size, condition, or fecundity relationships.
+
+What I plan to do:
+Identify implausible values and convert them to NA before analysis.
+
+
+OTHER ISSUES I NOTICED (but won't fix in Week 2)
+-------------------------------------------------
+- Missing egg counts that may be MAR or MNAR
+- Dates outside the stated study period
+- Possible repeated female_id values indicating repeated measures
+
+
+QUESTIONS TO DISCUSS IN WEEK 2
+-------------------------------
+Things I'm still unsure about:
+
+1. How to formally assess whether missing egg counts are MAR or MNAR.
+2. Whether repeated female_id values represent true repeated measures.
+3. Whether dates outside the study period should be excluded or corrected.
